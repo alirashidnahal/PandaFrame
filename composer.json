@@ -1,9 +1,17 @@
 {
   "name": "alirashidnahal/pandaframe",
+  "type": "project",
   "description": "A PHP library for data analysis inspired by pandas.",
-  "require": {},
+  "keywords": [
+    "pandaframe",
+    "library"
+  ],
+  "license": "GPL-3.0",
+  "require": {
+    "php": "^8.2"
+  },
   "require-dev": {
-    "phpunit/phpunit": "^10.0"
+    "phpunit/phpunit": "^11.0.1"
   },
   "autoload": {
     "psr-4": {
@@ -12,7 +20,23 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "PandaFrame\\Tests\\": "tests/"
+      "Tests\\": "tests/"
     }
-  }
+  },
+  "scripts": {},
+  "extra": {
+    "pandaframe": {
+      "dont-discover": []
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "php-http/discovery": true
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
